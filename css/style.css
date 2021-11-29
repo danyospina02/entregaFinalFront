@@ -19,58 +19,85 @@ body {
     flex-direction: row;
     padding: 1rem;
     justify-content: space-between;
+    
     z-index: 10;
 }
+
+/* Logo */
+
 /* Menu */
 .nav {
-     margin-left: 1rem;     
-     width: 50%;
+    width: 60%;
      display: flex;
      flex-direction: row;
      flex-wrap: wrap;
      align-items: center;
      align-content: center;
+     justify-content: space-between;    
 }
-.nav a{
+
+.nav ul{
+    display: flex;
+    list-style-type: none;
+}
+
+.nav ul li{
+    margin-left: 30px;
+}
+.header-top ul li:hover {    
+    color: rgb(184, 184, 184);
+}
+.nav ul li a{
     text-decoration: none;
     color: #242E52;  
+    margin-left: 1rem;
+    width: 50%;
+}
+
+a:link{   
+    text-decoration: none;
+}
+
+a:visited{    
+    text-decoration: none;
 }
 
 /* Drop down */
-
-.dropDownNav{
-    display: none;
-    position: relative;
-} 
-
 .dropBtn{
     display: none;
     border: none;
     cursor: pointer;
 }
 
-.ContentDropDown{
+.dropDown{
+    display: none;
+    position: fixed;
+}
+
+.dropDownContent{
     display: none;
     position: absolute;
     right: 0;
+    background-color: #f9f9f9;
     min-width: 160px;
-    box-shadow: 0px 4px 6px 0px rgba(0,0,0,0.2);
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
     z-index: 1;
 }
 
-.ContentDropDown a{
+.dropDownContent a{
     color: black;
     padding: 12px 16px;
     text-decoration: none;
     display: block;
 }
 
-.ContentDropDown a:hover{
-    background-color: rgb(249, 249, );
+.dropDownContent a:hover{
+    background-color: #f1f1f1;
 }
-.dropDown:hover .ContentDropDown{
+.dropDown:hover .dropDownContent{
     display: block;
 }
+
 
 /* Button Get Started */
 .btnGetStarted button {
@@ -83,6 +110,7 @@ body {
     box-shadow: 0px 6px 6px 0px rgba(242, 95, 58, 0.3);
     border: rgb(143, 148, 167);
     cursor: pointer;
+    
 }
 
 /* Banner */
@@ -133,19 +161,25 @@ body {
     height: 100%;
 }
 /* Media queries*/
-@media (max-width: 375px) {
+@media (max-width: 760px) {
 
     .container {
         display: flex;
         justify-content: space-between;
     }
-    
-    .nav a{
+
+    .nav {
+        display: flex;
+        justify-content: flex-end;
+    }
+  
+    .nav ul li a{
         display: none;
     }
 
-    .dropDownNav{
+    .dropDown{
         display: block;
+       
     }
 
     .dropBtn{
