@@ -3,12 +3,11 @@
     margin: 0;
     padding: 0;
 }
-
 body {
     font-family: 'Be Vietnam Pro', sans-serif; 
     background-image: url("../img/bg-tablet-pattern.svg");
-    background-size: cover;
-    width: 100%;
+    background-size: cover; 
+    width: 100%;  
 }
 
 /* Header */
@@ -18,20 +17,21 @@ header {
 .container {
     display: flex;
     flex-direction: row;
-    padding: 1rem;
-    justify-content: space-between;
+    justify-content: space-around;
     width: 100%;    
-    z-index: 10;
+    margin-top: 2%;
+    align-items: center;
 }
 
 /* Logo */
 .logo {
-    margin-left: 1.5rem;
-    width: 30%;
+    margin-left: 2rem;
+    width: 20%;
+    
 }
 /* Menu */
 .nav {
-    width: 55%;
+    width: 60%;
      display: flex;
      flex-direction: row;
      flex-wrap: wrap;
@@ -47,9 +47,10 @@ header {
 
 .nav ul li{
     margin-left: 30px;
+    font-size: 1.2rem;
 }
-.header-top ul li:hover {    
-    color: rgb(184, 184, 184);
+.nav ul li a:hover {    
+   color: gray;
 }
 .nav ul li a{
     text-decoration: none;
@@ -57,11 +58,9 @@ header {
     margin-left: 1rem;
     width: 50%;
 }
-
 a:link{   
     text-decoration: none;
 }
-
 a:visited{    
     text-decoration: none;
 }
@@ -114,6 +113,11 @@ a:visited{
     box-shadow: 0px 6px 6px 0px rgba(242, 95, 58, 0.3);
     border: rgb(143, 148, 167);
     cursor: pointer;    
+    font-size: 1rem;
+    
+}
+.btnGetStarted button:hover {
+    color:#242E52;
 }
 
 /* Banner */
@@ -122,7 +126,8 @@ a:visited{
     width: 100%;
     display: flex;
     flex-direction: row;
-    margin-top: 10%;    
+    margin-top: 10%;  
+    justify-content: space-between;    ;
 }
 
 .bannerLeft {
@@ -130,21 +135,21 @@ a:visited{
     display: flex;
     flex-direction: column;
     align-items: flex-start;
-    padding: 2rem 2rem 0.5rem 1rem;    
+    padding-left: 10%;
+    margin-top: 5%;  
 }
-
 .bannerLeft h1 {
     color: rgb(35, 44, 81);      
     font-size: 2.8rem;
     font-weight: 700;
     margin-bottom: 1rem;    
 }
-
 .bannerLeft p{
     color:rgb(143, 148, 167);
     font-size: 1rem;
     font-weight: 400;
-    margin: 0 1.5rem 2rem 0; 
+    padding-right: 20%;
+    margin-bottom: 5%;   
 }
 .bannerLeft div button {
     background-color: rgb(242, 95, 58);
@@ -156,9 +161,15 @@ a:visited{
     box-shadow: 0px 6px 6px 0px rgba(242, 95, 58, 0.3);
     border: rgb(143, 148, 167);
     cursor: pointer;   
+    font-size: 1rem;
+}
+.bannerLeft div button:hover {
+    color:#242E52;
 }
 .bannerRigth {
     width: 60%;
+    display: flex;
+    justify-content: center;
 }
 
 /* Information */
@@ -235,7 +246,8 @@ a:visited{
    align-content: center;
    text-align: center;
    justify-content: space-between;
-   margin: 5%;   
+   margin-top: 5%;
+   width: 100%; 
 }
 .person1, .person2, .person3 {
     width: 30%;
@@ -287,7 +299,12 @@ a:visited{
     box-shadow: 0px 6px 6px 0px rgba(242, 95, 58, 0.3);
     border: rgb(143, 148, 167);
     cursor: pointer;
+    font-size: 1rem;
 }
+.commentsBtn button:hover {
+    color:#242E52;
+}
+/* Footer */
 footer { 
     display: flex;
     flex-direction: column;
@@ -299,7 +316,6 @@ footer {
     margin-top: 5%;
     display: flex;
     justify-content: space-between;
-    width: 100%;
     align-items: center;
 }
 .footerOrange h3 {
@@ -317,13 +333,59 @@ footer {
     font-size: 0.5rem;  
     box-shadow: 0px 6px 6px 0px rgba(242, 95, 58, 0.3);
     border: rgb(143, 148, 167);
-    cursor: pointer;
-    margin-left: 50%;   
+    cursor: pointer;    
+    font-size: 1rem;
 }
+.footerOrange button:hover {
+    color:#242E52;
+}
+.footerBlack {
+    background-color: black;
+    width: 100%;
+    display: flex;
+    justify-content: space-evenly;
+    padding: 1rem;
+}
+.logoAndSocial{
+    display: flex;
+    flex-direction: column;
+}
+.logoAndSocial div {
+    display: flex;
+    width: 20%;
+    margin-top: 4rem;
+}
+.logoAndSocial div span a {
+    margin-left: 1rem;
+}
+.logoAndSocial div span a i{
+    color: white;
+}
+.footerNav {
+    list-style: none;
+    display: flex; 
+    justify-content: space-around;   
+}
+.footerNav nav {
+    display: flex;
+}
+.footerNav nav ul{
+    margin-left: 6rem;
+    list-style: none;
+}
+.footerNav nav ul li {
+    margin-bottom: 0.8rem;
+}
+.footerNav nav ul li a {
+    color: #fff;
+    text-decoration: none;
+    
+}
+
 
 /* Media queries*/
 @media (max-width: 760px) {
-
+    
     .background1 {
         width: 100%;
     }
@@ -337,11 +399,9 @@ footer {
         display: flex;
         justify-content: flex-end;
     }
-  
     .nav ul li a{
         display: none;
     }
-
     .dropDown{
         display: block;       
     }
@@ -354,14 +414,12 @@ footer {
         display: none;
         position: relative;
     }
-
     .banner {
         display: flex;
         flex-direction: column-reverse;
         justify-content: center;
         width: 100%;
     }
-
     .bannerLeft {
         width: 100%;
         display: flex;
@@ -369,7 +427,6 @@ footer {
         align-content: center;
         text-align: center;        
     }
-
     .bannerRigth {
         width: 100%;
     }
@@ -381,24 +438,19 @@ footer {
         flex-direction: column;
         align-content: center;
         align-items: center;
-        margin-left: 2rem;
-        
+        margin-left: 2rem;   
     }
-    
     .informationLeft {
         text-align: center;
-        width: 100%;
+        width: 90%;
     } 
-
     .informationRigth {
-        width: 100%;
-        
+        width: 90%;  
     } 
-
-    .informationRigth ul li article {
+    .informationRigth ul li {
         padding-left: 1rem;
+        margin-left: 1rem;
     }
-
     .photo{
         width: 20%;
         top: -20%;
@@ -416,12 +468,10 @@ footer {
         width:90%;
         margin-top: 10%;
     }
-
     .person1 div {
-        margin-bottom: 10%;
+        
         margin: 0 2rem 0.5rem 2rem;
     }
-
     .person2, .person3 {
         display: none;
     }
@@ -429,9 +479,14 @@ footer {
         text-align: center;
         margin-left: 5rem;
     }
+    .footer {
+        width: 100%;
+    }
     .footerOrange {
         flex-direction: column;
         padding: 10%;
+        justify-content: center;
+
     }
     .footerOrange h3 {
         color: #fff;
@@ -439,7 +494,9 @@ footer {
         font-weight: 500;
         width: 90%; 
         text-align: center;   
+    }    
+    .footerBlack {
+        width: 100%;
     }
-    
 
 }
