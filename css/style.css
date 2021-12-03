@@ -50,14 +50,17 @@ header {
     margin-left: 30px;
     font-size: 1.2rem;
 }
-.nav ul li a:hover {    
-   color: gray;
-}
 .nav ul li a{
     text-decoration: none;
     color: #242E52;  
     margin-left: 1rem;
     width: 50%;
+}
+.nav ul li a:hover {    
+    color: gray;
+}
+.nav ul li a:hover::before {    
+    content: ">";
 }
 a:link{   
     text-decoration: none;
@@ -389,6 +392,11 @@ footer {
 .formAndRights span {
     margin-top: 4rem;
    color: gray;       
+}
+.formAndRights form input {
+    border-radius: 1rem;
+    padding: 0.6rem;
+    border: none;
 }
 .formAndRights form button {
     border-radius: 1rem;
