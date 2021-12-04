@@ -2,7 +2,6 @@
 *{
     margin: 0;
     padding: 0;
-   
 }
 body {
     font-family: 'Be Vietnam Pro', sans-serif; 
@@ -10,7 +9,6 @@ body {
     background-size: cover; 
     width: 100%;  
 }
-
 /* Header */
 header {
     width: 100%;
@@ -23,12 +21,10 @@ header {
     margin-top: 2%;
     align-items: center;
 }
-
 /* Logo */
 .logo {
     margin-left: 2rem;
     width: 20%;
-    
 }
 /* Menu */
 .nav {
@@ -40,12 +36,10 @@ header {
      align-content: center;
      justify-content: space-between;    
 }
-
 .nav ul{
     display: flex;
     list-style-type: none;
 }
-
 .nav ul li{
     margin-left: 30px;
     font-size: 1.2rem;
@@ -68,18 +62,15 @@ a:link{
 a:visited{    
     text-decoration: none;
 }
-
 /* Drop down */
 .dropBtn{
     display: none;
     border: none;
     cursor: pointer;
 }
-
 .dropDown{
     display: none;    
 }
-
 .dropDownContent{
     display: none;
     position: absolute;
@@ -89,22 +80,18 @@ a:visited{
     box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
     z-index: 1;
 }
-
 .dropDownContent a{
     color: black;
     padding: 12px 16px;
     text-decoration: none;
     display: block;
 }
-
 .dropDownContent a:hover{
     background-color: #f1f1f1;
 }
 .dropDown:hover .dropDownContent{
     display: block;
 }
-
-
 /* Button Get Started */
 .btnGetStarted button {
     background-color: rgb(242, 95, 58);
@@ -117,14 +104,11 @@ a:visited{
     border: rgb(143, 148, 167);
     cursor: pointer;    
     font-size: 1rem;
-    
 }
 .btnGetStarted button:hover {
     color:#242E52;
 }
-
 /* Banner */
-
 .banner {
     width: 100%;
     display: flex;
@@ -132,7 +116,6 @@ a:visited{
     margin-top: 10%;  
     justify-content: space-between;    ;
 }
-
 .bannerLeft {
     width: 40%;
     display: flex;
@@ -174,9 +157,7 @@ a:visited{
     display: flex;
     justify-content: center;
 }
-
 /* Information */
-
 .information {
     display: flex;
     flex-direction: row;
@@ -233,7 +214,6 @@ a:visited{
     text-align: justify;
 }
 /* Comments */
-
 .comment h5 {
     color: rgb(35, 44, 81);      
     font-size: 2rem;
@@ -351,6 +331,7 @@ footer {
     padding-top: 1rem;
     justify-content: space-around;
 }
+/*Social media and logo*/
 .logoAndSocial{
     display: flex;
     flex-direction: column;
@@ -363,7 +344,7 @@ footer {
 .logoAndSocial div span a {
     margin-left: 1rem;
 }
-.logoAndSocial div span a i{
+.icon{
     color: white;
 }
 .footerNav {
@@ -375,7 +356,6 @@ footer {
 
 .footerNav section ul{
     list-style: none;
-    
 }
 .footerNav section ul li {
     margin-bottom: 0.8rem;
@@ -421,12 +401,10 @@ footer {
     .background1 {
         width: 100%;
     }
-
     .container {
         display: flex;
         justify-content: space-between;
     }
-
     .nav {
         display: flex;
         justify-content: flex-end;
@@ -437,11 +415,9 @@ footer {
     .dropDown{
         display: block;       
     }
-
     .dropBtn{
         display: block;
     }
-
     .btnGetStarted{
         display: none;
         position: relative;
@@ -469,8 +445,7 @@ footer {
         display: flex;
         flex-direction: column;
         align-content: center;
-        align-items: center;
-        margin-left: 2rem;   
+        align-items: center;      
     }
     .informationLeft {
         text-align: center;
@@ -478,11 +453,13 @@ footer {
     } 
     .informationRigth {
        width: 100%; 
-        
     } 
     .informationRigth ul li {
-        padding-left: 1rem;
-        margin-left: 1rem;
+        padding-left: 1rem;        
+    }
+    .informationRigth ul li article h4 {
+        background-color: rgba(252, 166, 135, 0.418);
+        margin-bottom: 0.5rem;
     }
     .photo{
         width: 20%;
@@ -501,8 +478,7 @@ footer {
         width:90%;
         margin-top: 10%;
     }
-    .person1 div {
-        
+    .person1 div {        
         margin: 0 2rem 0.5rem 2rem;
     }
     .person2, .person3 {
@@ -520,7 +496,6 @@ footer {
         padding: 10%;
         justify-content: center;
         width: 86%;
-
     }
     .footerOrange h3 {
         color: #fff;
@@ -535,12 +510,26 @@ footer {
         align-items: center;
         width: 106%;
     }
-    .footerBlack span {
-        color: gray; 
-    }    
+    .footerNav {
+        width: 100%;
+    }
+    .footerNav section ul {  
+        padding: 3rem 2rem 0 2rem;
+        font-size: 1.2rem;
+    }   
     .logoAndSocial{
         display: flex;
         flex-direction: column-reverse;
+        justify-content: center;
+    }
+    .icon {
+        padding-bottom: 4rem;
+        font-size: 3.5rem;
+    }
+    .logo2 {
+        width:70%;
+        padding-left: 3rem;
+        padding-bottom: 3rem;
     }
     .formAndRights{
         display: flex;
@@ -551,5 +540,9 @@ footer {
     .rights{
         display: block;
     }
-
+    .footerBlack span {
+        color: gray; 
+        text-align: center;
+        padding-bottom: 1rem;
+    }
 }
